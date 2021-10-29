@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
 import App from "./App";
 import GlobalStyles from "./GlobalStyles";
-import lightTheme from "./theme";
+import { lightTheme } from "./theme";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider value={lightTheme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <App />
     </ThemeProvider>
